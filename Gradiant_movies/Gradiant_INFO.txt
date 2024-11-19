@@ -1,0 +1,7 @@
+The project works by first loading a dataset containing movie details, such as whether the movie is 3D and its genre. The data is then preprocessed by converting categorical variables, like "3D_available" and "Genre," into dummy variables using Pandas' get_dummies() method, making them suitable for machine learning.
+
+Next, the dataset is split into predictors (features) and the target variable ("Start_Tech_Oscar"). The data is then divided into training and testing sets using Scikit-learn's train_test_split function.
+
+The model used is a Gradient Boosting Classifier, which is a powerful ensemble learning method. The model is trained using the training data, and its performance is evaluated on the test set. Accuracy scores and confusion matrices are used to assess the model's ability to predict whether a movie will win the "Start Tech Oscar."
+
+In the second part, the model is fine-tuned by adjusting parameters like learning rate, the number of estimators, and the tree depth. The final model is evaluated again using accuracy scores on both training and testing data.
